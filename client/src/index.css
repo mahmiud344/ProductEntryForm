@@ -55,4 +55,25 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+  
+  /* File upload styling */
+  .file-drop-area {
+    @apply relative flex flex-col items-center p-6 border-2 border-dashed rounded-md border-gray-300 bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer;
+  }
+
+  .file-preview {
+    @apply relative w-full;
+  }
+  
+  .file-preview img {
+    @apply w-full h-48 object-contain rounded-md;
+  }
+  
+  .file-preview button {
+    @apply absolute bottom-2 left-2 bg-white;
+  }
+
+  .file-input {
+    @apply absolute inset-0 w-full h-full opacity-0 cursor-pointer;
+  }
 }
